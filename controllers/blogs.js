@@ -24,7 +24,7 @@ blogsRouter.post('/', (request, response, next) => {
   const blog = new Blog({
     title: body.content,
     author: body.author,
-    url: body.author,
+    url: body.url,
     likes: body.likes
   })
 
@@ -49,7 +49,7 @@ blogsRouter.put('/:id', (request, response, next) => {
   const blog = {
     title: body.content,
     author: body.author,
-    url: body.author,
+    url: body.url,
     likes: body.likes
   }
 
